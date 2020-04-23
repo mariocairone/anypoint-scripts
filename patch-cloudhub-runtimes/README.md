@@ -1,10 +1,13 @@
-# Patch Cloudhub Runtimes
+# CloudHub Runtime Patcher
 
-The script, when executed, will apply the latest available patch to all the application runtimes in a specified environment.
+This script will apply the latest available patch to all application runtimes in an specified environment.
+
+Before running this script, make sure that [CURL](https://curl.haxx.se/) and [jq](https://stedolan.github.io/jq/) are installed.
+
 
 ## Usage
 
-Run the script providing all the parameters.
+Run this script providing all parameters:
 
 ```shell
 ./patchCHRuntimes.sh <username> <password> <organizationId> <environment> 
@@ -12,10 +15,9 @@ Run the script providing all the parameters.
 
 ### Parameters
 
-| name           | description               |
-| -------------- | ------------------------- |
-| username       | Anypoint User Username    |
-| password       | Anypoint User Password    |
-| organizationId | Anypoint Business Group ID|
-| environment    | Cloudhub Environment Name |
-
+| Name           | Description                 |
+| -------------- | --------------------------- |
+| username       | Anypoint's Username         |
+| password       | Anypoint's Password         |
+| organizationId | Anypoint's Business Group ID|
+| environment    | CloudHub's Environment Name |
